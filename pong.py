@@ -1,5 +1,5 @@
 import turtle
-import winsound
+
 
 wm = turtle.Screen()
 wm.title("Pong by @abuzarbagewadi")
@@ -98,12 +98,11 @@ while True:
     if ball.ycor() > 290:
         ball.sety(290)
         ball.dy *= -1
-        winsound.PlaySound("bouncesound.mp3",winsound.SND_ASYNC)
 
     if ball.ycor() < -290:
         ball.sety(-290)
         ball.dy *= -1
-        winsound.PlaySound("bouncesound.mp3",winsound.SND_ASYNC)
+        
 
     if ball.xcor() > 390:
         ball.goto(0,0)
